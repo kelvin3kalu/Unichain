@@ -13,11 +13,26 @@ body{
     height: 80vh;
     background-repeat: no-repeat;
 }
-.Nav-link{
+.hamburger{
+    display: none;
+}
+.log{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 300px;
+}
+.Nav-link{
+    position: fixed;
+    display: flex;
+    background-image: url(Assets/Unichain\ Pattern\ 1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
     gap: 600px;
+    width: 100%;
     margin-top: 20px;
 }
 .link ul{
@@ -93,6 +108,12 @@ button img{
 .img{
     position: relative;
 }
+.link-toogle{
+    background-color: #f5f5f5;
+    width: 100px;
+    height: 400px;
+    
+}
 .text{
     position: absolute;
     bottom: 200px;
@@ -150,4 +171,40 @@ button img{
 }
 .universe{
     font-style: italic;
+}
+@media screen and (max-width: 768px) {
+    .link{
+        display: none;
+    }
+    .contain{
+        margin: 50px 0 0 20px;
+    }
+    .content h1{
+        font-size: 2.5rem;
+    }
+    .content p{
+        font-size: 18px;
+    }
+    .button{
+        flex-direction: column;
+        gap: 10px;
+    }
+    button{
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .general{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .img img{
+        width: 300px;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    
 }
