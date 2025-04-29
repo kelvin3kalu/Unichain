@@ -1,5 +1,12 @@
 
-
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 70px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +30,7 @@ body{
     gap: 300px;
 }
 .Nav-link{
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     background-image: url(Assets/Unichain\ Pattern\ 1.png);
     background-position: center;
@@ -33,7 +40,6 @@ body{
     align-items: center;
     gap: 600px;
     width: 100%;
-    margin-top: 20px;
 }
 .link ul{
     text-decoration: none;
@@ -55,12 +61,15 @@ body{
     width: 170px;
 }
 .contain{
-    margin: 50px 0 0 90px;
+    margin-top: 50p;
 }
 .contain a{
     text-decoration: none;
     font-size: 23px;
     color: white;
+}
+.content{
+    margin-top: 60px;
 }
 .content h1{
     font-size: 4.5rem;
@@ -172,7 +181,7 @@ button img{
 .universe{
     font-style: italic;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .link{
         display: none;
     }
